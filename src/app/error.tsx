@@ -1,0 +1,10 @@
+"use client";
+export default function ErrorPage({ reset }: { reset: () => void }) {
+  return (
+    <div className="wrap page empty" role="alert">
+      <h1>내용을 불러오지 못했어요.</h1>
+      <p>연결 상태를 확인한 뒤 다시 시도해 주세요.</p>
+      <button onClick={() => reset()}>다시 시도</button>
+    </div>
+  );
+}
